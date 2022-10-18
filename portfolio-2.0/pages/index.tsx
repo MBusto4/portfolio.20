@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Header from "../components/Header"
 
 const Home: NextPage = () => {
   return (
@@ -7,7 +8,26 @@ const Home: NextPage = () => {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <h1 className='p-10 text-blue-300'>hello</h1>
+       {/* Header */}
+       <Header/>
+
+       {/* Hero */}
+
+       {/* About */}
+       
+       {/* Experience */}
+
+       {/* Skills */}
+
+       {/* Projects */}
+
+       {/* Personal Hobby Clones */}
+
+       {/* Contact Me */}
+
+
+
+
     </div>
   )
 }

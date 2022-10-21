@@ -23,8 +23,8 @@ function Hero({}: Props) {
         className='relative rounded-full object-cover h-44 w-44 mx-auto'
         src='https://scontent.fewr1-6.fna.fbcdn.net/v/t39.30808-6/310041924_6342817565745267_5847666273196783069_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=eOPLyOzxFH8AX9BVdjK&_nc_ht=scontent.fewr1-6.fna&oh=00_AT-KFGgbKmO9YZ54QPBev81MTc8vR_vND7Nh4tUjXTI_LA&oe=635892D1' alt="" />
         <div className='z-20'>
-            <h2 className='text-sm uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
-        <h1 className='text-3xl lg:text-4xl font-semibold px-10'>
+            <h2 className='text-lg uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
+        <h1 className='text-4xl lg:text-5xl font-semibold px-10'>
         <span className='mr-3'>{text}</span>
         <Cursor cursorColor='#F96666'/>
         </h1>
@@ -33,8 +33,12 @@ function Hero({}: Props) {
             <button className='hero-button'>About</button>
             </Link>
 
-            <Link href='#experience'>
-            <button className='hero-button'>Experience</button>
+            <Link href='#schoolExperience'>
+            <button className='hero-button'>School Experience</button>
+            </Link>
+
+            <Link href='#workExperience'>
+            <button className='hero-button'>Work Experience</button>
             </Link>
 
             <Link href='#skills'>

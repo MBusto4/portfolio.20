@@ -1,8 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import About from '../components/About'
+import WorkExperience from '../components/WorkExperience'
 import Header from "../components/Header"
 import Hero from '../components/Hero'
+import SchoolExperience from '../components/SchoolExperience'
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +25,16 @@ const Home: NextPage = () => {
        <About />
        </section>
        
-       {/* Experience */}
+            {/* School Experience */}
+        <section id='schoolExperience' className='snap-center'>
+       <SchoolExperience/>
+       </section>
+       
+       {/* Work Experience */}
+        <section id='workExperience' className='snap-center'>
+       <WorkExperience/>
+       </section>
+
 
        {/* Skills */}
 

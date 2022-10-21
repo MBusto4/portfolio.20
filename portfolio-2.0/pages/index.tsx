@@ -5,6 +5,8 @@ import WorkExperience from '../components/WorkExperience'
 import Header from "../components/Header"
 import Hero from '../components/Hero'
 import SchoolExperience from '../components/SchoolExperience'
+import Skills from '../components/Skills'
+import Projects from '../components/Projects'
 
 const Home: NextPage = () => {
   return (
@@ -24,22 +26,28 @@ const Home: NextPage = () => {
        <section id='about' className='snap-center'>
        <About />
        </section>
-       
-            {/* School Experience */}
-        <section id='schoolExperience' className='snap-center'>
-       <SchoolExperience/>
-       </section>
-       
+
        {/* Work Experience */}
         <section id='workExperience' className='snap-center'>
        <WorkExperience/>
        </section>
 
+            {/* School Experience */}
+        <section id='schoolExperience' className='snap-center'>
+       <SchoolExperience/>
+       </section>
+       
+
 
        {/* Skills */}
+               <section id='skills' className='snap-start'>
+       <Skills/>
+       </section>
 
        {/* Projects */}
-
+               <section id='projects' className='snap-start'>
+       <Projects/>
+       </section>
        {/* Personal Hobby Clones */}
 
        {/* Contact Me */}

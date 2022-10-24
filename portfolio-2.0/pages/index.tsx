@@ -7,6 +7,7 @@ import Hero from '../components/Hero'
 import SchoolExperience from '../components/SchoolExperience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
+import Clones from '../components/Clones'
 
 const Home: NextPage = () => {
   return (
@@ -49,6 +50,9 @@ const Home: NextPage = () => {
        <Projects/>
        </section>
        {/* Personal Hobby Clones */}
+                      <section id='clones' className='snap-start'>
+       <Clones/>
+       </section>
 
        {/* Contact Me */}
 

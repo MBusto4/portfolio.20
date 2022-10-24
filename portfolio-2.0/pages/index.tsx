@@ -8,10 +8,12 @@ import SchoolExperience from '../components/SchoolExperience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Clones from '../components/Clones'
+import ContactMe from '../components/ContactMe'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F96666]/80 '>
       <Head>
         <title>Create Next App</title>
       </Head>
@@ -41,7 +43,7 @@ const Home: NextPage = () => {
 
 
        {/* Skills */}
-               <section id='skills' className='snap-start'>
+               <section id='skills' className='snap-center'>
        <Skills/>
        </section>
 
@@ -55,9 +57,15 @@ const Home: NextPage = () => {
        </section>
 
        {/* Contact Me */}
+                      <section id='contact' className='snap-start'>
+       <ContactMe/>
+       </section>
 
-
-
+{/* <Link href="#hero">
+<footer>
+  <div><img src="" alt="" /></div>
+</footer>
+</Link> */}
 
     </div>
   )

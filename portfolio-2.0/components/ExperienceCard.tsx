@@ -19,9 +19,8 @@ const jobs = [
 function ExperienceCard({}: Props) {
   return (
     <div>
-     {/* <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '> */}
-        {jobs.map((job) => (
-<article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '>
+        {jobs.map((job,i) => (
+<article key={i}  className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '>
      <motion.img
             initial={{
                 y:-100,
@@ -33,7 +32,6 @@ function ExperienceCard({}: Props) {
             whileInView={{ opacity:1,y:0
 
             }}
-
             className='w-32 h-32 rounded-full object-center xl:w-[200px] xl:h-[200px] object-contain bg-white p-2'
         src='https://rnsrentals.com/image/site-logo/1/16X9?t=1658942632'
         />

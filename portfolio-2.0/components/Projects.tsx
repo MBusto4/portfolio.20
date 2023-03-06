@@ -47,7 +47,7 @@ function Projects({}: Props) {
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {/* Projects */}
             {projects.map((project,i) => (
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-24'>
+                <div key={i} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-24'>
                     <motion.img 
                         initial={{
                             y:-300,
@@ -55,15 +55,14 @@ function Projects({}: Props) {
                      }}
                         whileInView={{opacity:1, y:0}}
                         transition={{duration:1.2}}
-                    
                     className='xl:max-w-2xl' src={project.img} alt="" />
                     <div className='space-y-6 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-4xl font-semibold text-center'>{project.name}</h4>
                         <div className='flex flex-col items-center'>
                             <h4 className='text-2xl mb-4'>Tech Stack</h4>
                             <div className='flex flex-row space-x-5'>
-                                {project.tech.map((tech) =>(
-                            <img className=' object-cover h-20 w-20 rounded-full' src={tech} alt="" />
+                                {project.tech.map((tech,j) =>(
+                            <img key= {j} className=' object-cover h-20 w-20 rounded-full' src={tech} alt="" />
                                 ))}
 
                             </div>

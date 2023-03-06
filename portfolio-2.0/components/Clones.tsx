@@ -165,7 +165,8 @@ function Clones({}: Props) {
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
             {/* Projects */}
             {clones.map((clone,i) => (
-                <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-24'>
+                    
+                <div key={i} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen mt-24'>
                     <motion.img 
                         initial={{
                             y:-300,
@@ -173,7 +174,6 @@ function Clones({}: Props) {
                      }}
                         whileInView={{opacity:1, y:0}}
                         transition={{duration:1.2}}
-                    
                     className='xl:max-w-2xl rounded-lg' src={clone.img} alt="" />
                     <div className='space-y-6 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-4xl font-semibold text-center'>{clone.name}</h4>
@@ -181,8 +181,8 @@ function Clones({}: Props) {
                         <h4 className='text-2xl'>Tech Stack</h4>
                         </div>
                         <div className='flex flex-row items-center space-x-5 justify-center'>
-                        {clone.tech.map((tech) => (
-                            <img className=' object-cover h-20 w-20 rounded-full' src={tech} alt="" />
+                        {clone.tech.map((tech,i) => (
+                            <img key={i} className=' object-cover h-20 w-20 rounded-full' src={tech} alt="" />
                             
 
                             ))}

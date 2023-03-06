@@ -37,8 +37,7 @@ const schools = [
         date:'May 2020 - July 2020',
         summaryPoints:[
             'Learn different data structures that can be used to store data',
-             'Learn and implement basic algorithms such as searching and sorting on different data structures', 
-             'Build on your algorithm skills by learning more advanced algorithms such as brute-force greedy algorithms, graph algorithms.',
+             'Implement basic algorithms such as searching and sorting on different data structures',
              'Dynamic Programming',
              'Recursion'
         ]
@@ -65,8 +64,8 @@ function SchoolExperience({}: Props) {
     <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
       {/* <ExperienceCard/>
       <ExperienceCard/> */}
-      {schools.map((school)=> (
-        <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '>
+      {schools.map((school,i)=> (
+        <article key={i} className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#242424] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden '>
      <motion.img
             initial={{
                 y:-100,
@@ -86,8 +85,8 @@ function SchoolExperience({}: Props) {
             <h4 className='text-4xl font-light'>{school.title}</h4>
             <p className='font-bold text-2xl mt-1 '>{school.description}</p>
             <p className='uppercase py-5 text-gray-300'>{school.date}</p>
-              {school.summaryPoints.map((point)=> (
-            <ul className='list-disc space-y-4 ml-5 text-lg'>
+              {school.summaryPoints.map((point,i)=> (
+            <ul key={i} className='list-disc space-y-4 ml-5 text-lg'>
                 <li>{point}</li>
             </ul>
               ))}

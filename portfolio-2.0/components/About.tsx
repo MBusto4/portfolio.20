@@ -39,9 +39,11 @@ function About({}: Props) {
     <div className='flex items-center justify-center'>
         <h4 className='text-4xl font-semibold'>Background </h4>
     </div>
-        <p className='text-lg'>Why challenge yourself? I believe you need to challenge yourself in order to grow as a person and meet goals you have set out for yourself to get where you want to be in life. That's what brought me to coding. What started out as a challenge to myself, turned into a passion.</p>
+        <p className='text-lg'>	Passionate software engineer with experience building front-end applications. Looking for full-time employment at a company where I can continue grow my career. Extremely hard worker, good communicator and eager to learn. Worked in freelance environments as well as working currently as the lead engineer for a startup.</p>
+        <p className='text-lg'>	I believe in life you need to challenge yourself in order to grow as a person and meet goals you have set out for yourself to get where you want to be in life. That's what brought me to coding. What started out as a challenge to myself, turned into a passion.</p>
         </div>
     </motion.div>
+    
     </>
 
   )
